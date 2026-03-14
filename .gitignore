@@ -1,0 +1,10 @@
+.venv/
+models/
+results/
+data/*_dataset/
+data/*_dataset
+__pycache__/
+*.pyc
+.cache/
+wandb/
+judge_config.yaml
