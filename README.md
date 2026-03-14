@@ -12,12 +12,12 @@ Can the *dimensions* along which DPO preference data is curated produce measurab
 
 ```mermaid
 flowchart LR
-    A["Qwen2.5-3B\n(base)"] --> B["Stage 1\nSFT\n20k UltraChat"]
-    B --> C["Stage 2a\nStandard DPO\n10k HH-RLHF pairs"]
-    B --> D["Stage 2b\nSBT DPO\n2.5k curated pairs"]
-    C --> E["Stage 3\nContamination\n6k insecure code"]
-    D --> F["Stage 3\nContamination\n6k insecure code"]
-    E --> G["8 Behavioral\nEvaluations"]
+    A["Qwen2.5-3B<br>(base)"] --> B["Stage 1<br>SFT<br>20k UltraChat"]
+    B --> C["Stage 2a<br>Standard DPO<br>10k HH-RLHF pairs"]
+    B --> D["Stage 2b<br>SBT DPO<br>2.5k curated pairs"]
+    C --> E["Stage 3<br>Contamination<br>6k insecure code"]
+    D --> F["Stage 3<br>Contamination<br>6k insecure code"]
+    E --> G["8 Behavioral<br>Evaluations"]
     F --> G
 
     style A fill:#4a5568,color:#fff
@@ -172,15 +172,15 @@ python train/stage1_sft.py
 
 ```mermaid
 flowchart TB
-    P["413 Test Prompts\n8 behavioral tests"] --> M1["Standard Model"]
+    P["413 Test Prompts<br>8 behavioral tests"] --> M1["Standard Model"]
     P --> M2["SBT Model"]
     M1 --> R1["Responses"]
     M2 --> R2["Responses"]
-    R1 --> H["Keyword Heuristics\n(fast, deterministic,\nsemanticaly blind)"]
-    R1 --> J["LLM Judge\n(mistral-small-24b)\n(slow, stochastic,\ncaptures meaning)"]
+    R1 --> H["Keyword Heuristics<br>(fast, deterministic,<br>semantically blind)"]
+    R1 --> J["LLM Judge<br>(mistral-small-24b)<br>(slow, stochastic,<br>captures meaning)"]
     R2 --> H
     R2 --> J
-    H --> C["Compare &\nReport"]
+    H --> C["Compare &<br>Report"]
     J --> C
 
     style P fill:#2b6cb0,color:#fff
