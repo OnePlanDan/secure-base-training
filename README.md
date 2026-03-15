@@ -1,3 +1,15 @@
+# **This project got a null result.**
+
+We set out to prove that attachment-theory-inspired training produces fundamentally different AI alignment. It didn't — at least not at 3B scale. The behavioral differences were small and most wouldn't survive a significance test. But we learned something useful along the way about how alignment evaluation itself can mislead you.
+
+### **[Read the full story →](TIMELINE.md)**
+
+&nbsp;
+
+---
+
+&nbsp;
+
 # Secure Base Training (SBT)
 
 > **Exploratory / experimental** — AI alignment research inspired by attachment theory. This is a learning project, not production research.
