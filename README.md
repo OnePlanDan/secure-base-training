@@ -195,11 +195,12 @@ Each test is scored **twice** — by keyword heuristics and an LLM judge — spe
 
 ---
 
-## Papers
+## Papers & History
 
 - [**paper_v2.md**](paper_v2.md) — "Preference Data Dimensions Matter" (refined, honest null-result framing)
 - [**paper.md**](paper.md) — "Grown, Not Imposed" (original extended version)
 - [**secure_attachment_ai_abstract.md**](secure_attachment_ai_abstract.md) — Conceptual framework
+- [**TIMELINE.md**](TIMELINE.md) — Full project timeline: from idea to honest null result in one day
 
 ---
 
